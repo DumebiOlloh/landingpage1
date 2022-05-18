@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:  white;
+    color: #356161;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2em;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+#mainHeader{
+    height: 60px;
+    background-color: #ebe9e9;
+    color: #7eb8b8;
+}
+
+h1{
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+}
+
+.mainNavLink{
+    text-decoration: none;
+    color: #7eb8b8;
+    display: inline-flex;
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mainNavLink:hover{
+    color: #b6dd9b;
+    transform: scale(1.2);
+}
+
+.mainNavLink:active{
+    color: black;
+}
+
+#showCase{
+    background: linear-gradient(45deg,#87b8b8, #f5aba3,  #b6dd9b, #87b8b8);
+    font-size: 25px;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+}
+
+h5.showCaseText{
+    padding: 20px;
+}
+
+.showCaseText{
+    animation-name: showcasedance;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;   
+}
+@keyframes showcasedance{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#mainContent{
+    box-sizing: border-box;
+    float: left;
+    width: 70%; 
+    text-align: justify;
+    font-size: 11pt;
+    padding: 30px;
+
+}
+
+#mainContent h4{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+#sideBar{
+    box-sizing: border-box;
+    width: 30%;
+    padding: 10px;
+    float: right;
+    background-color: #b6dd9b;
+    margin-top: 30px;
+}
+
+.sideBarLinks{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.sideBarLinks:hover{
+    color: #f5aba3;
+}
+#mainFooter{
+    background-color: #8dad77;
+    text-align: center;
+    font-size: smaller;
+}
+
+time{
+    display: block;
+}
